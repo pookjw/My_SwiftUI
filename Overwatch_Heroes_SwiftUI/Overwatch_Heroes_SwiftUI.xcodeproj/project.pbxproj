@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F32004532367AA8200F688AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32004522367AA8200F688AB /* DetailView.swift */; };
+		F32004552367AD6D00F688AB /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F32004542367AD6D00F688AB /* Data.json */; };
+		F32004572367B54900F688AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F32004562367B54900F688AB /* README.md */; };
+		F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1A2367A94C007B5680 /* AppDelegate.swift */; };
+		F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */; };
+		F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1E2367A94C007B5680 /* ContentView.swift */; };
+		F3D64F212367A94D007B5680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D64F202367A94D007B5680 /* Assets.xcassets */; };
+		F3D64F242367A94D007B5680 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D64F232367A94D007B5680 /* Preview Assets.xcassets */; };
+		F3D64F272367A94D007B5680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D64F252367A94D007B5680 /* LaunchScreen.storyboard */; };
+		F3D64F322367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F312367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift */; };
+		F3D64F3D2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F3C2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift */; };
+		F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4A2367A9A6007B5680 /* RowView.swift */; };
+		F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4B2367A9A6007B5680 /* ListView.swift */; };
+		F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4C2367A9A6007B5680 /* Data.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3D64F2E2367A94D007B5680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D64F0F2367A94C007B5680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D64F162367A94C007B5680;
+			remoteInfo = Overwatch_Heroes_SwiftUI;
+		};
+		F3D64F392367A94D007B5680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D64F0F2367A94C007B5680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D64F162367A94C007B5680;
+			remoteInfo = Overwatch_Heroes_SwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F32004522367AA8200F688AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F32004542367AD6D00F688AB /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		F32004562367B54900F688AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F3D64F172367A94C007B5680 /* Overwatch_Heroes_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch_Heroes_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D64F1A2367A94C007B5680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3D64F1E2367A94C007B5680 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3D64F202367A94D007B5680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3D64F232367A94D007B5680 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3D64F262367A94D007B5680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3D64F282367A94D007B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D64F2D2367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Overwatch_Heroes_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D64F312367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overwatch_Heroes_SwiftUITests.swift; sourceTree = "<group>"; };
+		F3D64F332367A94D007B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D64F382367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Overwatch_Heroes_SwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D64F3C2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overwatch_Heroes_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		F3D64F3E2367A94D007B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D64F4A2367A9A6007B5680 /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		F3D64F4B2367A9A6007B5680 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F3D64F4C2367A9A6007B5680 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3D64F142367A94C007B5680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F2A2367A94D007B5680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F352367A94D007B5680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3D64F0E2367A94C007B5680 = {
+			isa = PBXGroup;
+			children = (
+				F32004562367B54900F688AB /* README.md */,
+				F3D64F192367A94C007B5680 /* Overwatch_Heroes_SwiftUI */,
+				F3D64F302367A94D007B5680 /* Overwatch_Heroes_SwiftUITests */,
+				F3D64F3B2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests */,
+				F3D64F182367A94C007B5680 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3D64F182367A94C007B5680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D64F172367A94C007B5680 /* Overwatch_Heroes_SwiftUI.app */,
+				F3D64F2D2367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.xctest */,
+				F3D64F382367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3D64F192367A94C007B5680 /* Overwatch_Heroes_SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F3D64F4C2367A9A6007B5680 /* Data.swift */,
+				F3D64F4B2367A9A6007B5680 /* ListView.swift */,
+				F3D64F4A2367A9A6007B5680 /* RowView.swift */,
+				F3D64F1A2367A94C007B5680 /* AppDelegate.swift */,
+				F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */,
+				F3D64F1E2367A94C007B5680 /* ContentView.swift */,
+				F3D64F202367A94D007B5680 /* Assets.xcassets */,
+				F3D64F252367A94D007B5680 /* LaunchScreen.storyboard */,
+				F3D64F282367A94D007B5680 /* Info.plist */,
+				F3D64F222367A94D007B5680 /* Preview Content */,
+				F32004522367AA8200F688AB /* DetailView.swift */,
+				F32004542367AD6D00F688AB /* Data.json */,
+			);
+			path = Overwatch_Heroes_SwiftUI;
+			sourceTree = "<group>";
+		};
+		F3D64F222367A94D007B5680 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F3D64F232367A94D007B5680 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F3D64F302367A94D007B5680 /* Overwatch_Heroes_SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3D64F312367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift */,
+				F3D64F332367A94D007B5680 /* Info.plist */,
+			);
+			path = Overwatch_Heroes_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		F3D64F3B2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3D64F3C2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift */,
+				F3D64F3E2367A94D007B5680 /* Info.plist */,
+			);
+			path = Overwatch_Heroes_SwiftUIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3D64F162367A94C007B5680 /* Overwatch_Heroes_SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D64F412367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUI" */;
+			buildPhases = (
+				F3D64F132367A94C007B5680 /* Sources */,
+				F3D64F142367A94C007B5680 /* Frameworks */,
+				F3D64F152367A94C007B5680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overwatch_Heroes_SwiftUI;
+			productName = Overwatch_Heroes_SwiftUI;
+			productReference = F3D64F172367A94C007B5680 /* Overwatch_Heroes_SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3D64F2C2367A94D007B5680 /* Overwatch_Heroes_SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D64F442367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUITests" */;
+			buildPhases = (
+				F3D64F292367A94D007B5680 /* Sources */,
+				F3D64F2A2367A94D007B5680 /* Frameworks */,
+				F3D64F2B2367A94D007B5680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3D64F2F2367A94D007B5680 /* PBXTargetDependency */,
+			);
+			name = Overwatch_Heroes_SwiftUITests;
+			productName = Overwatch_Heroes_SwiftUITests;
+			productReference = F3D64F2D2367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3D64F372367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D64F472367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUIUITests" */;
+			buildPhases = (
+				F3D64F342367A94D007B5680 /* Sources */,
+				F3D64F352367A94D007B5680 /* Frameworks */,
+				F3D64F362367A94D007B5680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3D64F3A2367A94D007B5680 /* PBXTargetDependency */,
+			);
+			name = Overwatch_Heroes_SwiftUIUITests;
+			productName = Overwatch_Heroes_SwiftUIUITests;
+			productReference = F3D64F382367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3D64F0F2367A94C007B5680 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = pookjw;
+				TargetAttributes = {
+					F3D64F162367A94C007B5680 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					F3D64F2C2367A94D007B5680 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F3D64F162367A94C007B5680;
+					};
+					F3D64F372367A94D007B5680 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = F3D64F162367A94C007B5680;
+					};
+				};
+			};
+			buildConfigurationList = F3D64F122367A94C007B5680 /* Build configuration list for PBXProject "Overwatch_Heroes_SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3D64F0E2367A94C007B5680;
+			productRefGroup = F3D64F182367A94C007B5680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3D64F162367A94C007B5680 /* Overwatch_Heroes_SwiftUI */,
+				F3D64F2C2367A94D007B5680 /* Overwatch_Heroes_SwiftUITests */,
+				F3D64F372367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3D64F152367A94C007B5680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D64F272367A94D007B5680 /* LaunchScreen.storyboard in Resources */,
+				F3D64F242367A94D007B5680 /* Preview Assets.xcassets in Resources */,
+				F32004572367B54900F688AB /* README.md in Resources */,
+				F3D64F212367A94D007B5680 /* Assets.xcassets in Resources */,
+				F32004552367AD6D00F688AB /* Data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F2B2367A94D007B5680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F362367A94D007B5680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3D64F132367A94C007B5680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */,
+				F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */,
+				F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */,
+				F32004532367AA8200F688AB /* DetailView.swift in Sources */,
+				F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */,
+				F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */,
+				F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F292367A94D007B5680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D64F322367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3D64F342367A94D007B5680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D64F3D2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3D64F2F2367A94D007B5680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3D64F162367A94C007B5680 /* Overwatch_Heroes_SwiftUI */;
+			targetProxy = F3D64F2E2367A94D007B5680 /* PBXContainerItemProxy */;
+		};
+		F3D64F3A2367A94D007B5680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3D64F162367A94C007B5680 /* Overwatch_Heroes_SwiftUI */;
+			targetProxy = F3D64F392367A94D007B5680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3D64F252367A94D007B5680 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D64F262367A94D007B5680 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3D64F3F2367A94D007B5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3D64F402367A94D007B5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3D64F422367A94D007B5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Overwatch_Heroes_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3D64F432367A94D007B5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Overwatch_Heroes_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3D64F452367A94D007B5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch_Heroes_SwiftUI.app/Overwatch_Heroes_SwiftUI";
+			};
+			name = Debug;
+		};
+		F3D64F462367A94D007B5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Overwatch_Heroes_SwiftUI.app/Overwatch_Heroes_SwiftUI";
+			};
+			name = Release;
+		};
+		F3D64F482367A94D007B5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Overwatch_Heroes_SwiftUI;
+			};
+			name = Debug;
+		};
+		F3D64F492367A94D007B5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P53D29U9LJ;
+				INFOPLIST_FILE = Overwatch_Heroes_SwiftUIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Overwatch_Heroes_SwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3D64F122367A94C007B5680 /* Build configuration list for PBXProject "Overwatch_Heroes_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D64F3F2367A94D007B5680 /* Debug */,
+				F3D64F402367A94D007B5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D64F412367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D64F422367A94D007B5680 /* Debug */,
+				F3D64F432367A94D007B5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D64F442367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D64F452367A94D007B5680 /* Debug */,
+				F3D64F462367A94D007B5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D64F472367A94D007B5680 /* Build configuration list for PBXNativeTarget "Overwatch_Heroes_SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D64F482367A94D007B5680 /* Debug */,
+				F3D64F492367A94D007B5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3D64F0F2367A94C007B5680 /* Project object */;
+}

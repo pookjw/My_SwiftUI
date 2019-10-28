@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Tracer",
+        "profileImage": "Tracer",
+        "backgroundImage": "Tracer_background",
+        "health": 150,
+        "category": "Damage"
+    },
+    {
+        "id": 2,
+        "name": "Sigma",
+        "profileImage": "Sigma",
+        "backgroundImage": "Sigma_background",
+        "health": 400,
+        "category": "Tank"
+        
+    }
+]
