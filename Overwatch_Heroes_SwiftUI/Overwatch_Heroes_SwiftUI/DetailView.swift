@@ -9,7 +9,11 @@
 import SwiftUI
 
 struct DetailView: View {
+    @EnvironmentObject var userData: userData
     let hero: Hero
+    var heroIndex: Int{
+        userData.heroData.firstIndex(where: {$0.id == hero.id})!
+    }
     var body: some View {
         VStack{
             Image(hero.backgroundImage)
@@ -26,8 +30,17 @@ struct DetailView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
+            Button(action: {self.userData.heroData[self.heroIndex].favorite.toggle()}){
+                if userData.heroData[heroIndex].favorite{
+                    Image(systemName: "star.fill")
+                        .foregroundColor(Color.yellow)
+                }else{
+                    Image(systemName: "star")
+                        .foregroundColor(Color.gray)
+                }
+            }
             Spacer()
-                .frame(height: 100)
+            .frame(height: 100)
             Text("Category: \(hero.category.rawValue)")
             Text("Health: \(hero.health)")
                 

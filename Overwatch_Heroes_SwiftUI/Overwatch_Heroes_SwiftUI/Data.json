@@ -1,18 +1,38 @@
 [
     {
         "id": 1,
+        "name": "Brigitte",
+        "profileImage": "Brigitte",
+        "backgroundImage": "Brigitte_background",
+        "health": 250,
+        "favorite": true,
+        "category": "Support"
+    },
+    {
+        "id": 2,
         "name": "Tracer",
         "profileImage": "Tracer",
         "backgroundImage": "Tracer_background",
         "health": 150,
+        "favorite": true,
         "category": "Damage"
     },
     {
-        "id": 2,
+        "id": 3,
+        "name": "Hanzo",
+        "profileImage": "Hanzo",
+        "backgroundImage": "Hanzo_background",
+        "health": 200,
+        "favorite": false,
+        "category": "Damage"
+    },
+    {
+        "id": 4,
         "name": "Sigma",
         "profileImage": "Sigma",
         "backgroundImage": "Sigma_background",
         "health": 400,
+        "favorite": false,
         "category": "Tank"
         
     }

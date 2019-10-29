@@ -9,12 +9,19 @@
 import SwiftUI
 
 struct ListView: View {
-    let hero : [Hero]
+    @EnvironmentObject var userData: userData
     var body: some View {
         NavigationView{
-            List(hero){ value in
-                NavigationLink(destination: DetailView(hero: value)){
-                    RowView(hero: value)
+            List{
+                Toggle(isOn: $userData.showOnlyFavorite){
+                    Text("Show Favorite Only")
+                }
+                ForEach(self.userData.heroData){ value in
+                    if !self.userData.showOnlyFavorite || value.favorite{
+                        NavigationLink(destination: DetailView(hero: value)){
+                            RowView(hero: value)
+                        }
+                    }
                 }
             }.navigationBarTitle(Text("Overwatch Heroes"))
         }
@@ -23,6 +30,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        ListView(hero: heroes)
+        ListView()
     }
 }

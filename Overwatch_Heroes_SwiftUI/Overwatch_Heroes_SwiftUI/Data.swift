@@ -17,6 +17,7 @@ struct Hero: Hashable, Codable, Identifiable {
     var profileImage: String
     var backgroundImage: String
     var health: Int
+    var favorite: Bool
     var category: Category
 
     enum Category: String, CaseIterable, Codable, Hashable {
@@ -48,6 +49,9 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-
+final class userData: ObservableObject{
+    @Published var showOnlyFavorite = false
+    @Published var heroData = heroes
+}
 
 
