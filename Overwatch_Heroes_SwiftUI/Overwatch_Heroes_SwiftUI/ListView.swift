@@ -11,20 +11,28 @@ import SwiftUI
 struct ListView: View {
     @EnvironmentObject var userData: userData
     var body: some View {
-        NavigationView{
-            List{
-                Toggle(isOn: $userData.showOnlyFavorite){
-                    Text("Show Favorite Only")
-                }
-                ForEach(self.userData.heroData){ value in
-                    if !self.userData.showOnlyFavorite || value.favorite{
-                        NavigationLink(destination: DetailView(hero: value)){
-                            RowView(hero: value)
+        HStack{
+            NavigationView{
+                List{
+                    Toggle(isOn: $userData.showOnlyFavorite){
+                        Text("Show Favorite Only")
+                    }
+                    ForEach(self.userData.heroData){ value in
+                        if !self.userData.showOnlyFavorite || value.favorite{
+                            NavigationLink(destination: DetailView(hero: value)){
+                                RowView(hero: value)
+                            }
                         }
                     }
-                }
-            }.navigationBarTitle(Text("Overwatch Heroes"))
+                    NavigationLink(destination: LogoView()){
+                        Text("Logo").font(.largeTitle)
+                    }
+                }.navigationBarTitle(
+                    Text("Overwatch Heroes")
+                )
+            }
         }
+        
     }
 }
 

@@ -10,6 +10,7 @@
 		F32004532367AA8200F688AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32004522367AA8200F688AB /* DetailView.swift */; };
 		F32004552367AD6D00F688AB /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F32004542367AD6D00F688AB /* Data.json */; };
 		F32004572367B54900F688AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F32004562367B54900F688AB /* README.md */; };
+		F35A4C87236918C800827E45 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A4C86236918C800827E45 /* LogoView.swift */; };
 		F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1A2367A94C007B5680 /* AppDelegate.swift */; };
 		F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */; };
 		F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1E2367A94C007B5680 /* ContentView.swift */; };
@@ -44,6 +45,7 @@
 		F32004522367AA8200F688AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		F32004542367AD6D00F688AB /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		F32004562367B54900F688AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F35A4C86236918C800827E45 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		F3D64F172367A94C007B5680 /* Overwatch_Heroes_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch_Heroes_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D64F1A2367A94C007B5680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		F3D64F192367A94C007B5680 /* Overwatch_Heroes_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F35A4C86236918C800827E45 /* LogoView.swift */,
 				F3D64F4C2367A9A6007B5680 /* Data.swift */,
 				F3D64F4B2367A9A6007B5680 /* ListView.swift */,
 				F3D64F4A2367A9A6007B5680 /* RowView.swift */,
@@ -293,6 +296,7 @@
 				F32004532367AA8200F688AB /* DetailView.swift in Sources */,
 				F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */,
 				F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */,
+				F35A4C87236918C800827E45 /* LogoView.swift in Sources */,
 				F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
