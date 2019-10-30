@@ -6,6 +6,7 @@
         "profileImage": "Brigitte",
         "backgroundImage": "Brigitte_background",
         "health": 250,
+        "difficulty": 1,
         "favorite": true,
         "category": "Support"
     },
@@ -16,6 +17,7 @@
         "profileImage": "Tracer",
         "backgroundImage": "Tracer_background",
         "health": 150,
+        "difficulty": 2,
         "favorite": true,
         "category": "Damage"
     },
@@ -26,6 +28,7 @@
         "profileImage": "Hanzo",
         "backgroundImage": "Hanzo_background",
         "health": 200,
+        "difficulty": 3,
         "favorite": false,
         "category": "Damage"
     },
@@ -36,8 +39,52 @@
         "profileImage": "Sigma",
         "backgroundImage": "Sigma_background",
         "health": 400,
+        "difficulty": 3,
         "favorite": false,
         "category": "Tank"
-        
+    },
+    {
+        "id": 5,
+        "name": "Doomfist",
+        "description": "\"ONLY THROUGH CONFLICT DO WE EVOLVE.\"",
+        "profileImage": "Doomfist",
+        "backgroundImage": "Doomfist_background",
+        "health": 250,
+        "difficulty": 3,
+        "favorite": true,
+        "category": "Damage"
+    },
+    {
+        "id": 6,
+        "name": "Soldier: 76",
+        "description": "\"WE'RE ALL SOLDIERS NOW.\"",
+        "profileImage": "Soldier76",
+        "backgroundImage": "Soldier76_background",
+        "health": 200,
+        "difficulty": 1,
+        "favorite": false,
+        "category": "Damage"
+    },
+    {
+        "id": 7,
+        "name": "D.Va",
+        "description": "\"I PLAY TO WIN.\"",
+        "profileImage": "DVa",
+        "backgroundImage": "DVa_background",
+        "health": 600,
+        "difficulty": 2,
+        "favorite": false,
+        "category": "Tank"
+    },
+    {
+        "id": 8,
+        "name": "Wrecking Ball",
+        "description": "\"DO NOT ANGER THE HAMSTER.\"",
+        "profileImage": "Ball",
+        "backgroundImage": "Ball_background",
+        "health": 600,
+        "difficulty": 3,
+        "favorite": true,
+        "category": "Tank"
     }
 ]

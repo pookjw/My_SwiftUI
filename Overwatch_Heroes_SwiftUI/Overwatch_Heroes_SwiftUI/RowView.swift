@@ -16,7 +16,7 @@ struct RowView: View {
     }
     var body: some View {
         HStack{
-            Image(hero.name)
+            Image(hero.profileImage)
                 .resizable()
                 .frame(width: 50, height: 50)
                 .clipShape(Circle())

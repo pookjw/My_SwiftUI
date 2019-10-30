@@ -22,6 +22,7 @@
 		F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4A2367A9A6007B5680 /* RowView.swift */; };
 		F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4B2367A9A6007B5680 /* ListView.swift */; };
 		F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4C2367A9A6007B5680 /* Data.swift */; };
+		F3EB235623695BC00010D91C /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB235523695BC00010D91C /* DifficultyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F3D64F4A2367A9A6007B5680 /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		F3D64F4B2367A9A6007B5680 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F3D64F4C2367A9A6007B5680 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F3EB235523695BC00010D91C /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				F3D64F222367A94D007B5680 /* Preview Content */,
 				F32004522367AA8200F688AB /* DetailView.swift */,
 				F32004542367AD6D00F688AB /* Data.json */,
+				F3EB235523695BC00010D91C /* DifficultyView.swift */,
 			);
 			path = Overwatch_Heroes_SwiftUI;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3EB235623695BC00010D91C /* DifficultyView.swift in Sources */,
 				F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */,
 				F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */,
 				F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */,

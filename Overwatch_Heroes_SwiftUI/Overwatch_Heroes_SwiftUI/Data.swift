@@ -18,6 +18,7 @@ struct Hero: Hashable, Codable, Identifiable {
     var profileImage: String
     var backgroundImage: String
     var health: Int
+    var difficulty: Int
     var favorite: Bool
     var category: Category
 

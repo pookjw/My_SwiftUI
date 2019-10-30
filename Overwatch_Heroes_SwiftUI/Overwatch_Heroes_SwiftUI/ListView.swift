@@ -11,37 +11,34 @@ import SwiftUI
 struct ListView: View {
     @EnvironmentObject var userData: userData
     var body: some View {
-        HStack{
-            NavigationView{
-                List{
-                    Toggle(isOn: $userData.showOnlyFavorite){
-                        Text("Show Favorite Only")
-                    }
-                    ForEach(self.userData.heroData){ value in
-                        if !self.userData.showOnlyFavorite || value.favorite{
-                            NavigationLink(destination: DetailView(hero: value)){
-                                RowView(hero: value)
-                            }
+        NavigationView{
+            List{
+                NavigationLink(destination: LogoView()){
+                    HStack{
+                        Image("logo")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                            .shadow(radius: 15)
+                        Spacer()
+                            .frame(width: 30)
+                        Text("Logo").font(.largeTitle)
+                        Spacer()
+                    }.padding()
+                }
+                Toggle(isOn: $userData.showOnlyFavorite){
+                    Text("Show Favorite Only")
+                }
+                ForEach(self.userData.heroData){ value in
+                    if !self.userData.showOnlyFavorite || value.favorite{
+                        NavigationLink(destination: DetailView(hero: value)){
+                            RowView(hero: value)
                         }
                     }
-                    NavigationLink(destination: LogoView()){
-                        HStack{
-                            Image("logo")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                                .shadow(radius: 15)
-                            Spacer()
-                                .frame(width: 30)
-                            Text("Logo").font(.largeTitle)
-                            Spacer()
-                        }.padding()
-                    }
-                }.navigationBarTitle(
-                    Text("Overwatch Heroes")
-                )
-            }
+                }
+            }.navigationBarTitle(
+                Text("Overwatch Heroes")
+            )
         }
-        
     }
 }
 

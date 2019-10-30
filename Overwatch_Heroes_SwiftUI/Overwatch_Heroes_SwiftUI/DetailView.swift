@@ -83,6 +83,10 @@ struct DetailView: View {
                 VStack{
                     Text("Category: \(hero.category.rawValue)")
                     Text("Health: \(hero.health)")
+                    HStack{
+                        Text("Difficulty:")
+                        DifficultyView(hero: hero)
+                    }.padding()
                 }.transition(.FadeAndMove)
             }
             
