@@ -22,8 +22,11 @@ struct RowView: View {
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.gray, lineWidth: 3))
                 .shadow(radius: 15)
+            Spacer()
+                .frame(width: 30)
             Text(hero.name)
                 .font(.largeTitle)
+                .multilineTextAlignment(.leading)
             Spacer()
             Button(action: {self.userData.heroData[self.heroIndex].favorite.toggle()}){
                 if userData.heroData[heroIndex].favorite{

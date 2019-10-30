@@ -25,7 +25,16 @@ struct ListView: View {
                         }
                     }
                     NavigationLink(destination: LogoView()){
-                        Text("Logo").font(.largeTitle)
+                        HStack{
+                            Image("logo")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                                .shadow(radius: 15)
+                            Spacer()
+                                .frame(width: 30)
+                            Text("Logo").font(.largeTitle)
+                            Spacer()
+                        }.padding()
                     }
                 }.navigationBarTitle(
                     Text("Overwatch Heroes")

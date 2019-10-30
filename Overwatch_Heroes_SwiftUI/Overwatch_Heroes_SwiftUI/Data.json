@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Brigitte",
+        "description": "\"I WILL PROVE MYSELF!\"",
         "profileImage": "Brigitte",
         "backgroundImage": "Brigitte_background",
         "health": 250,
@@ -11,6 +12,7 @@
     {
         "id": 2,
         "name": "Tracer",
+        "description": "\"CHEERS, LOVE! THE CAVALRY’S HERE!\"",
         "profileImage": "Tracer",
         "backgroundImage": "Tracer_background",
         "health": 150,
@@ -20,6 +22,7 @@
     {
         "id": 3,
         "name": "Hanzo",
+        "description": "\"WITH EVERY DEATH COMES HONOR. WITH HONOR, REDEMPTION.\"",
         "profileImage": "Hanzo",
         "backgroundImage": "Hanzo_background",
         "health": 200,
@@ -29,6 +32,7 @@
     {
         "id": 4,
         "name": "Sigma",
+        "description": "\"THERE IS NO OBLIGATION FOR THE UNIVERSE TO MAKE SENSE TO YOU.\"",
         "profileImage": "Sigma",
         "backgroundImage": "Sigma_background",
         "health": 400,

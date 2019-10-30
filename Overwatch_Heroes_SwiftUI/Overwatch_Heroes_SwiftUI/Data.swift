@@ -14,6 +14,7 @@ let heroes: [Hero] = load("Data.json")
 struct Hero: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var description: String
     var profileImage: String
     var backgroundImage: String
     var health: Int
