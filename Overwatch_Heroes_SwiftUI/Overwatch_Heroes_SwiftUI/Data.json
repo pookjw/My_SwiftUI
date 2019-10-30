@@ -86,5 +86,16 @@
         "difficulty": 3,
         "favorite": true,
         "category": "Tank"
+    },
+    {
+        "id": 9,
+        "name": "Mercy",
+        "description": "\"HEROES NEVER DIE.\"",
+        "profileImage": "Mercy",
+        "backgroundImage": "Mercy_background",
+        "health": 200,
+        "difficulty": 1,
+        "favorite": false,
+        "category": "Support"
     }
 ]
