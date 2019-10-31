@@ -32,10 +32,7 @@ struct DetailView: View {
                 .resizable()
                 .frame(width: 1600/3, height: 300)
                 .edgesIgnoringSafeArea(.top)
-            Image(hero.profileImage)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.gray, lineWidth: 6))
-                .shadow(radius: 15)
+            ProfileImageView(hero: hero, lineWidth: 6)
                 .offset(y: -100)
                 .padding(.bottom, -70)
 

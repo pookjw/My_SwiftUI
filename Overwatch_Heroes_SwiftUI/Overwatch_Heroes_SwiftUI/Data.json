@@ -97,5 +97,16 @@
         "difficulty": 1,
         "favorite": false,
         "category": "Support"
+    },
+    {
+        "id": 10,
+        "name": "Baptiste",
+        "description": "\"NO DYING ON MY WATCH.\"",
+        "profileImage": "Baptiste",
+        "backgroundImage": "Baptiste_background",
+        "health": 200,
+        "difficulty": 3,
+        "favorite": true,
+        "category": "Support"
     }
 ]

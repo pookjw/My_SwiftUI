@@ -48,9 +48,13 @@ struct Logo: View {
 struct LogoView: View{
     var body: some View{
         VStack{
+            Spacer()
+                .frame(height: 100)
             Image("logo")
                 .resizable()
                 .frame(width: 300, height: 300)
+            Spacer()
+                .frame(height: 50)
             Text("Official Logo")
             Logo().scaleEffect(1.0/1.5)
             Text("With SwiftUI Geometry")

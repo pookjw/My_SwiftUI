@@ -20,9 +20,11 @@
 		F3D64F322367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F312367A94D007B5680 /* Overwatch_Heroes_SwiftUITests.swift */; };
 		F3D64F3D2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F3C2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift */; };
 		F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4A2367A9A6007B5680 /* RowView.swift */; };
-		F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4B2367A9A6007B5680 /* ListView.swift */; };
+		F3D64F4E2367A9A6007B5680 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4B2367A9A6007B5680 /* HomeView.swift */; };
 		F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F4C2367A9A6007B5680 /* Data.swift */; };
 		F3EB235623695BC00010D91C /* DifficultyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EB235523695BC00010D91C /* DifficultyView.swift */; };
+		F3F2433A236AA12000AD9FA3 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F24339236AA12000AD9FA3 /* CategoryView.swift */; };
+		F3F2433C236AA73B00AD9FA3 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F2433B236AA73B00AD9FA3 /* ProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +64,11 @@
 		F3D64F3C2367A94D007B5680 /* Overwatch_Heroes_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overwatch_Heroes_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		F3D64F3E2367A94D007B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D64F4A2367A9A6007B5680 /* RowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
-		F3D64F4B2367A9A6007B5680 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		F3D64F4B2367A9A6007B5680 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F3D64F4C2367A9A6007B5680 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F3EB235523695BC00010D91C /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
+		F3F24339236AA12000AD9FA3 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		F3F2433B236AA73B00AD9FA3 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 			children = (
 				F35A4C86236918C800827E45 /* LogoView.swift */,
 				F3D64F4C2367A9A6007B5680 /* Data.swift */,
-				F3D64F4B2367A9A6007B5680 /* ListView.swift */,
+				F3D64F4B2367A9A6007B5680 /* HomeView.swift */,
 				F3D64F4A2367A9A6007B5680 /* RowView.swift */,
 				F3D64F1A2367A94C007B5680 /* AppDelegate.swift */,
 				F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */,
@@ -130,6 +134,8 @@
 				F32004522367AA8200F688AB /* DetailView.swift */,
 				F32004542367AD6D00F688AB /* Data.json */,
 				F3EB235523695BC00010D91C /* DifficultyView.swift */,
+				F3F24339236AA12000AD9FA3 /* CategoryView.swift */,
+				F3F2433B236AA73B00AD9FA3 /* ProfileImageView.swift */,
 			);
 			path = Overwatch_Heroes_SwiftUI;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 				F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */,
 				F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */,
 				F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */,
+				F3F2433A236AA12000AD9FA3 /* CategoryView.swift in Sources */,
+				F3F2433C236AA73B00AD9FA3 /* ProfileImageView.swift in Sources */,
 				F32004532367AA8200F688AB /* DetailView.swift in Sources */,
-				F3D64F4E2367A9A6007B5680 /* ListView.swift in Sources */,
+				F3D64F4E2367A9A6007B5680 /* HomeView.swift in Sources */,
 				F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */,
 				F35A4C87236918C800827E45 /* LogoView.swift in Sources */,
 				F3D64F4D2367A9A6007B5680 /* RowView.swift in Sources */,

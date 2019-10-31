@@ -54,6 +54,7 @@ func load<T: Decodable>(_ filename: String) -> T {
 final class userData: ObservableObject{
     @Published var showOnlyFavorite = false
     @Published var heroData = heroes
+    @Published var showLegacyList = false
 }
 
 

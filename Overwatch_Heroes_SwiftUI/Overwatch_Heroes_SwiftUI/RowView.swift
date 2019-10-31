@@ -16,12 +16,7 @@ struct RowView: View {
     }
     var body: some View {
         HStack{
-            Image(hero.profileImage)
-                .resizable()
-                .frame(width: 50, height: 50)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.gray, lineWidth: 3))
-                .shadow(radius: 15)
+            ProfileImageView(hero: hero, size: 50, lineWidth: 3)
             Spacer()
                 .frame(width: 30)
             Text(hero.name)
