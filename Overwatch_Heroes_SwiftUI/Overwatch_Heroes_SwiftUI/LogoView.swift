@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Logo: View {
+    var lineWidth: CGFloat
     var body: some View {
         GeometryReader{ geometry in
             Path{ path in
@@ -39,25 +40,41 @@ struct Logo: View {
             }
             .fill(Color.gray)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.gray, lineWidth: 40))
+            .overlay(Circle().stroke(Color.gray, lineWidth: self.lineWidth))
             .scaledToFit()
         }
     }
 }
 
 struct LogoView: View{
+    var lineWidth: CGFloat = 40
+    @EnvironmentObject var userData: userData
     var body: some View{
         VStack{
+            Spacer()
+                .frame(height: 30)
+            Button(action: {self.userData.showLogoSheet.toggle()}){
+                HStack{
+                    Spacer()
+                    Text("Close")
+                    Spacer()
+                        .frame(width: 30)
+                }
+                
+                    
+            }
             Spacer()
                 .frame(height: 100)
             Image("logo")
                 .resizable()
-                .frame(width: 300, height: 300)
+                .frame(width: 200, height: 200)
             Spacer()
                 .frame(height: 50)
             Text("Official Logo")
-            Logo().scaleEffect(1.0/1.5)
+            Logo(lineWidth: self.lineWidth).scaleEffect(1.0/1.5)
             Text("With SwiftUI Geometry")
+            Spacer()
+                .frame(height: 30)
         }
     }
 }

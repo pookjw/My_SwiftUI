@@ -67,6 +67,7 @@
 		F3D64F4B2367A9A6007B5680 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F3D64F4C2367A9A6007B5680 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F3EB235523695BC00010D91C /* DifficultyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyView.swift; sourceTree = "<group>"; };
+		F3EE1C13236B7E3000350923 /* Overwatch_Heroes_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Overwatch_Heroes_SwiftUI.entitlements; sourceTree = "<group>"; };
 		F3F24339236AA12000AD9FA3 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		F3F2433B236AA73B00AD9FA3 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +121,7 @@
 		F3D64F192367A94C007B5680 /* Overwatch_Heroes_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F3EE1C13236B7E3000350923 /* Overwatch_Heroes_SwiftUI.entitlements */,
 				F35A4C86236918C800827E45 /* LogoView.swift */,
 				F3D64F4C2367A9A6007B5680 /* Data.swift */,
 				F3D64F4B2367A9A6007B5680 /* HomeView.swift */,
@@ -474,7 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Overwatch_Heroes_SwiftUI/Overwatch_Heroes_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Overwatch_Heroes_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BLK3WNSQR5;
 				ENABLE_PREVIEWS = YES;
@@ -485,6 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Overwatch_Heroes_SwiftUI/Overwatch_Heroes_SwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Overwatch_Heroes_SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = BLK3WNSQR5;
 				ENABLE_PREVIEWS = YES;
@@ -505,6 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pookjw.Overwatch-Heroes-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

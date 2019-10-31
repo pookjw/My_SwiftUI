@@ -22,7 +22,7 @@ struct DetailView: View {
     @State var showDetail = false
     @EnvironmentObject var userData: userData
 
-    let hero: Hero
+    var hero: Hero
     var heroIndex: Int{
         userData.heroData.firstIndex(where: {$0.id == hero.id})!
     }
