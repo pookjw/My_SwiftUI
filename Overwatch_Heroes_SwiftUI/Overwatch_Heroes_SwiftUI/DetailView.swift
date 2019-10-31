@@ -28,10 +28,10 @@ struct DetailView: View {
     }
     var body: some View {
          ScrollView(.vertical, showsIndicators: true){
- 
             Image(hero.backgroundImage)
                 .resizable()
-                .frame(width: 1600/3, height: 300)
+                .scaledToFit()
+                //.frame(width: 1600/3, height: 300)
                 //.edgesIgnoringSafeArea(.top)
             ProfileImageView(hero: hero, lineWidth: 6)
                 .offset(y: 50)
