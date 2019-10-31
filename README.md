@@ -12,6 +12,6 @@ Practice SwiftUI
 
 ![4](https://live.staticflickr.com/65535/48992774021_60a496d637_o.png)
 
-Image Copyright from [Blizzard](https://playoverwatch.com/en-us/heroes)
+Image Copyright by [Blizzard](https://playoverwatch.com/en-us/heroes)
 
 Some codes from [Apple](https://developer.apple.com/tutorials/swiftui)
