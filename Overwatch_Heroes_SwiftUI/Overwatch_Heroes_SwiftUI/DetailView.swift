@@ -27,14 +27,15 @@ struct DetailView: View {
         userData.heroData.firstIndex(where: {$0.id == hero.id})!
     }
     var body: some View {
-        VStack{
+         ScrollView(.vertical, showsIndicators: true){
+ 
             Image(hero.backgroundImage)
                 .resizable()
                 .frame(width: 1600/3, height: 300)
-                .edgesIgnoringSafeArea(.top)
+                //.edgesIgnoringSafeArea(.top)
             ProfileImageView(hero: hero, lineWidth: 6)
-                .offset(y: -100)
-                .padding(.bottom, -70)
+                .offset(y: 50)
+                .padding(.bottom, 50)
 
             Text(hero.name)
                 .font(.largeTitle)
@@ -58,7 +59,7 @@ struct DetailView: View {
                 }
             }
             Spacer()
-                .frame(height: 15)
+                .frame(height: 30)
             
             Button(action: {withAnimation{self.showDetail.toggle()}}){
                 Image(systemName: "chevron.left.circle")
@@ -87,9 +88,7 @@ struct DetailView: View {
                 }.transition(.FadeAndMove)
             }
             
-            Spacer()
-            
-        }
+        }.navigationBarTitle(Text(hero.name), displayMode: .inline)
     }
 }
 

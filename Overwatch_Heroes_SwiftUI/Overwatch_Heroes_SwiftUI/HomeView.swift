@@ -26,6 +26,7 @@ struct HomeView: View {
                 .resizable()
                 .frame(width: 30, height: 30)
                 .shadow(radius: 15)
+                .accessibility(label: Text("View Logo"))
         }
     }
     
