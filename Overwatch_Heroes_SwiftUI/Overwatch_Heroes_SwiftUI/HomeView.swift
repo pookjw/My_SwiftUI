@@ -21,6 +21,8 @@ struct HomeView: View {
     
     var logoButton: some View{
         Button(action: {self.showLogoSheet.toggle()}){
+            Text("View Logo")
+                .font(.footnote)
             Image("logo")
                 .renderingMode(.original)
                 .resizable()
@@ -62,12 +64,10 @@ struct HomeView: View {
             }
                 .navigationBarTitle(Text("Overwatch Heroes"))
             .navigationBarItems(trailing: HStack{
-                Text("View Logo")
-                    .font(.footnote)
                 logoButton
             })
                 .sheet(isPresented: $showLogoSheet){
-                    LogoView()
+                    LogoView(showLogoSheet: self.$showLogoSheet)
                 }
         }
     }

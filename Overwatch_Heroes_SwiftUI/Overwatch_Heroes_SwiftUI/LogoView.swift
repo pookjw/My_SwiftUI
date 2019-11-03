@@ -39,31 +39,38 @@ struct Logo: View {
             }
             .fill(Color.gray)
             .clipShape(Circle())
-            .overlay(Circle().stroke(Color.gray, lineWidth: 40))
+            .overlay(Circle().stroke(Color.gray, lineWidth: 20))
             .scaledToFit()
         }
     }
 }
 
 struct LogoView: View{
+    @Binding var showLogoSheet: Bool
+    
+    var toggleButton: some View{
+        Button(action: {self.showLogoSheet.toggle()}){
+            Image(systemName: "xmark")
+        }
+    }
+    
     var body: some View{
-        VStack{
-            Spacer()
-                .frame(height: 100)
-            Image("logo")
-                .resizable()
-                .frame(width: 300, height: 300)
-            Spacer()
-                .frame(height: 50)
-            Text("Official Logo")
-            Logo().scaleEffect(1.0/1.5)
-            Text("With SwiftUI Geometry")
+        NavigationView{
+            VStack{
+                Spacer()
+                    .frame(height: 100)
+                Image("logo")
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                Spacer()
+                    .frame(height: 50)
+                Text("Official Logo")
+                Logo().scaleEffect(1.0/1.5)
+                Text("With SwiftUI Geometry")
+            }
+        .navigationBarTitle(Text("Logo"))
+        .navigationBarItems(trailing: toggleButton)
         }
     }
 }
 
-struct LogoView_Previews: PreviewProvider {
-    static var previews: some View {
-        LogoView()
-    }
-}

@@ -31,7 +31,8 @@ struct HeroView: View {
  
             Image(self.userData.heroData[heroIndex].backgroundImage)
                 .resizable()
-                .frame(width: 1600/3, height: 300)
+                .scaledToFit()
+                //.frame(width: 1600/3, height: 300)
                 //.edgesIgnoringSafeArea(.top)
             ProfileImageView(hero: self.userData.heroData[heroIndex], lineWidth: 6)
                 .offset(y: 50)
@@ -42,7 +43,7 @@ struct HeroView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
 
-            Text("\"\(self.userData.heroData[heroIndex].description.uppercased())\"")
+        Text("\"\(self.userData.heroData[heroIndex].description.uppercased())\"")
                 .font(.caption)
                 .fontWeight(.ultraLight)
                 .multilineTextAlignment(.center)
