@@ -10,6 +10,7 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject var userData: userData
+    @State var showLogoSheet = false
     
     var category: [String: [Hero]]{
         Dictionary(
@@ -19,18 +20,12 @@ struct HomeView: View {
     }
     
     var logoButton: some View{
-        Button(action: {self.userData.showLogoSheet.toggle()}){
-            Text("View Logo")
-                .font(.footnote)
+        Button(action: {self.showLogoSheet.toggle()}){
             Image("logo")
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 30, height: 30)
-<<<<<<< HEAD
                 //.shadow(radius: 15)
-=======
-                .shadow(radius: 15)
->>>>>>> af89b8b4ccd9647995becec6af31cfacd7aed674
                 .accessibility(label: Text("View Logo"))
         }
     }
@@ -67,11 +62,12 @@ struct HomeView: View {
             }
                 .navigationBarTitle(Text("Overwatch Heroes"))
             .navigationBarItems(trailing: HStack{
+                Text("View Logo")
+                    .font(.footnote)
                 logoButton
             })
-                .sheet(isPresented: $userData.showLogoSheet){
+                .sheet(isPresented: $showLogoSheet){
                     LogoView()
-                        .environmentObject(self.userData)
                 }
         }
     }

@@ -1,8 +1,4 @@
-# My_SwiftUI
-
-Practice SwiftUI
-
-## Overwatch_Heroes_SwiftUI
+# Overwatch_Heroes_Swift
 
 ![1](https://live.staticflickr.com/65535/48992225903_8001b81e6c_o.png)
 

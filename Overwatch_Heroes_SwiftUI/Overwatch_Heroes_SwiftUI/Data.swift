@@ -57,7 +57,6 @@ final class userData: ObservableObject{
     @Published var showOnlyFavorite = false
     @Published var heroData = heroes
     @Published var showLegacyList = false
-    @Published var showLogoSheet = false
 }
 
 
