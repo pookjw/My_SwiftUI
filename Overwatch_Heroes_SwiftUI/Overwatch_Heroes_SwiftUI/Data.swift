@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-let heroes: [Hero] = load("Data.json")
+let heroes: [Hero] = load("Hero.json")
 
 struct Hero: Hashable, Codable, Identifiable {
     var id: Int
@@ -28,6 +28,8 @@ struct Hero: Hashable, Codable, Identifiable {
         case damage = "Damage"
     }
 }
+
+//struct profile: Hashable, Codable, I
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

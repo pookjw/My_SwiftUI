@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Brigitte",
-        "description": "\"I WILL PROVE MYSELF!\"",
+        "description": "I WILL PROVE MYSELF!",
         "profileImage": "Brigitte",
         "backgroundImage": "Brigitte_background",
         "health": 250,
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "Tracer",
-        "description": "\"CHEERS, LOVE! THE CAVALRY’S HERE!\"",
+        "description": "CHEERS, LOVE! THE CAVALRY’S HERE!",
         "profileImage": "Tracer",
         "backgroundImage": "Tracer_background",
         "health": 150,
@@ -24,7 +24,7 @@
     {
         "id": 3,
         "name": "Hanzo",
-        "description": "\"WITH EVERY DEATH COMES HONOR. WITH HONOR, REDEMPTION.\"",
+        "description": "WITH EVERY DEATH COMES HONOR. WITH HONOR, REDEMPTION.",
         "profileImage": "Hanzo",
         "backgroundImage": "Hanzo_background",
         "health": 200,
@@ -35,7 +35,7 @@
     {
         "id": 4,
         "name": "Sigma",
-        "description": "\"THERE IS NO OBLIGATION FOR THE UNIVERSE TO MAKE SENSE TO YOU.\"",
+        "description": "THERE IS NO OBLIGATION FOR THE UNIVERSE TO MAKE SENSE TO YOU.",
         "profileImage": "Sigma",
         "backgroundImage": "Sigma_background",
         "health": 400,
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "name": "Doomfist",
-        "description": "\"ONLY THROUGH CONFLICT DO WE EVOLVE.\"",
+        "description": "ONLY THROUGH CONFLICT DO WE EVOLVE.",
         "profileImage": "Doomfist",
         "backgroundImage": "Doomfist_background",
         "health": 250,
@@ -57,7 +57,7 @@
     {
         "id": 6,
         "name": "Soldier: 76",
-        "description": "\"WE'RE ALL SOLDIERS NOW.\"",
+        "description": "WE'RE ALL SOLDIERS NOW.",
         "profileImage": "Soldier76",
         "backgroundImage": "Soldier76_background",
         "health": 200,
@@ -68,7 +68,7 @@
     {
         "id": 7,
         "name": "D.Va",
-        "description": "\"I PLAY TO WIN.\"",
+        "description": "I PLAY TO WIN.",
         "profileImage": "DVa",
         "backgroundImage": "DVa_background",
         "health": 600,
@@ -79,7 +79,7 @@
     {
         "id": 8,
         "name": "Wrecking Ball",
-        "description": "\"DO NOT ANGER THE HAMSTER.\"",
+        "description": "DO NOT ANGER THE HAMSTER.",
         "profileImage": "Ball",
         "backgroundImage": "Ball_background",
         "health": 600,
@@ -90,7 +90,7 @@
     {
         "id": 9,
         "name": "Mercy",
-        "description": "\"HEROES NEVER DIE.\"",
+        "description": "HEROES NEVER DIE.",
         "profileImage": "Mercy",
         "backgroundImage": "Mercy_background",
         "health": 200,
@@ -101,7 +101,7 @@
     {
         "id": 10,
         "name": "Baptiste",
-        "description": "\"NO DYING ON MY WATCH.\"",
+        "description": "NO DYING ON MY WATCH.",
         "profileImage": "Baptiste",
         "backgroundImage": "Baptiste_background",
         "health": 200,

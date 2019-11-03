@@ -25,7 +25,7 @@ struct CategoryView: View {
                     Spacer()
                         .frame(width: 3)
                     ForEach(self.items){ item in
-                        NavigationLink(destination: DetailView(hero: item)){
+                        NavigationLink(destination: HeroView(hero: item)){
                             ItemView(hero: item)
                         }
                         .buttonStyle(PlainButtonStyle())

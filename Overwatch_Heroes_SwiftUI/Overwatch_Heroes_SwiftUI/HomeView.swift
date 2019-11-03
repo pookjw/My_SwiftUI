@@ -13,7 +13,7 @@ struct HomeView: View {
     
     var category: [String: [Hero]]{
         Dictionary(
-            grouping: heroes,
+            grouping: self.userData.heroData,
             by: {$0.category.rawValue}
         )
     }
@@ -26,7 +26,11 @@ struct HomeView: View {
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 30, height: 30)
+<<<<<<< HEAD
+                //.shadow(radius: 15)
+=======
                 .shadow(radius: 15)
+>>>>>>> af89b8b4ccd9647995becec6af31cfacd7aed674
                 .accessibility(label: Text("View Logo"))
         }
     }
@@ -43,7 +47,7 @@ struct HomeView: View {
                     }
                     ForEach(self.userData.heroData){ value in
                         if !self.userData.showOnlyFavorite || value.favorite{
-                            NavigationLink(destination: DetailView(hero: value)){
+                            NavigationLink(destination: HeroView(hero: value)){
                                 RowView(hero: value)
                             }
                         }

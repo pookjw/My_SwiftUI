@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F32004532367AA8200F688AB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32004522367AA8200F688AB /* DetailView.swift */; };
-		F32004552367AD6D00F688AB /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F32004542367AD6D00F688AB /* Data.json */; };
+		F32004532367AA8200F688AB /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32004522367AA8200F688AB /* HeroView.swift */; };
+		F32004552367AD6D00F688AB /* Hero.json in Resources */ = {isa = PBXBuildFile; fileRef = F32004542367AD6D00F688AB /* Hero.json */; };
 		F32004572367B54900F688AB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F32004562367B54900F688AB /* README.md */; };
+		F33D4176236D480800D4FED3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D4175236D480800D4FED3 /* DetailView.swift */; };
+		F33D4178236D5CD300D4FED3 /* Profile.json in Resources */ = {isa = PBXBuildFile; fileRef = F33D4177236D5CD300D4FED3 /* Profile.json */; };
+		F33D417A236D5ECD00D4FED3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D4179236D5ECD00D4FED3 /* ProfileView.swift */; };
+		F33D417C236D619800D4FED3 /* DetailEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33D417B236D619800D4FED3 /* DetailEditorView.swift */; };
 		F35A4C87236918C800827E45 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35A4C86236918C800827E45 /* LogoView.swift */; };
 		F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1A2367A94C007B5680 /* AppDelegate.swift */; };
 		F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D64F1C2367A94C007B5680 /* SceneDelegate.swift */; };
@@ -45,9 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F32004522367AA8200F688AB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
-		F32004542367AD6D00F688AB /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		F32004522367AA8200F688AB /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
+		F32004542367AD6D00F688AB /* Hero.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Hero.json; sourceTree = "<group>"; };
 		F32004562367B54900F688AB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F33D4175236D480800D4FED3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		F33D4177236D5CD300D4FED3 /* Profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Profile.json; sourceTree = "<group>"; };
+		F33D4179236D5ECD00D4FED3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F33D417B236D619800D4FED3 /* DetailEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditorView.swift; sourceTree = "<group>"; };
 		F35A4C86236918C800827E45 /* LogoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		F3D64F172367A94C007B5680 /* Overwatch_Heroes_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Overwatch_Heroes_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D64F1A2367A94C007B5680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +132,7 @@
 				F3EE1C13236B7E3000350923 /* Overwatch_Heroes_SwiftUI.entitlements */,
 				F35A4C86236918C800827E45 /* LogoView.swift */,
 				F3D64F4C2367A9A6007B5680 /* Data.swift */,
+				F33D4177236D5CD300D4FED3 /* Profile.json */,
 				F3D64F4B2367A9A6007B5680 /* HomeView.swift */,
 				F3D64F4A2367A9A6007B5680 /* RowView.swift */,
 				F3D64F1A2367A94C007B5680 /* AppDelegate.swift */,
@@ -133,11 +142,14 @@
 				F3D64F252367A94D007B5680 /* LaunchScreen.storyboard */,
 				F3D64F282367A94D007B5680 /* Info.plist */,
 				F3D64F222367A94D007B5680 /* Preview Content */,
-				F32004522367AA8200F688AB /* DetailView.swift */,
-				F32004542367AD6D00F688AB /* Data.json */,
+				F32004522367AA8200F688AB /* HeroView.swift */,
+				F32004542367AD6D00F688AB /* Hero.json */,
 				F3EB235523695BC00010D91C /* DifficultyView.swift */,
 				F3F24339236AA12000AD9FA3 /* CategoryView.swift */,
 				F3F2433B236AA73B00AD9FA3 /* ProfileImageView.swift */,
+				F33D4175236D480800D4FED3 /* DetailView.swift */,
+				F33D417B236D619800D4FED3 /* DetailEditorView.swift */,
+				F33D4179236D5ECD00D4FED3 /* ProfileView.swift */,
 			);
 			path = Overwatch_Heroes_SwiftUI;
 			sourceTree = "<group>";
@@ -276,7 +288,8 @@
 				F3D64F242367A94D007B5680 /* Preview Assets.xcassets in Resources */,
 				F32004572367B54900F688AB /* README.md in Resources */,
 				F3D64F212367A94D007B5680 /* Assets.xcassets in Resources */,
-				F32004552367AD6D00F688AB /* Data.json in Resources */,
+				F32004552367AD6D00F688AB /* Hero.json in Resources */,
+				F33D4178236D5CD300D4FED3 /* Profile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +315,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3EB235623695BC00010D91C /* DifficultyView.swift in Sources */,
+				F33D417A236D5ECD00D4FED3 /* ProfileView.swift in Sources */,
+				F33D4176236D480800D4FED3 /* DetailView.swift in Sources */,
 				F3D64F1B2367A94C007B5680 /* AppDelegate.swift in Sources */,
 				F3D64F4F2367A9A6007B5680 /* Data.swift in Sources */,
 				F3D64F1D2367A94C007B5680 /* SceneDelegate.swift in Sources */,
 				F3F2433A236AA12000AD9FA3 /* CategoryView.swift in Sources */,
 				F3F2433C236AA73B00AD9FA3 /* ProfileImageView.swift in Sources */,
-				F32004532367AA8200F688AB /* DetailView.swift in Sources */,
+				F32004532367AA8200F688AB /* HeroView.swift in Sources */,
+				F33D417C236D619800D4FED3 /* DetailEditorView.swift in Sources */,
 				F3D64F4E2367A9A6007B5680 /* HomeView.swift in Sources */,
 				F3D64F1F2367A94C007B5680 /* ContentView.swift in Sources */,
 				F35A4C87236918C800827E45 /* LogoView.swift in Sources */,

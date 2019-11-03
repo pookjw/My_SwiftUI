@@ -2,31 +2,39 @@
 //  DetailView.swift
 //  Overwatch_Heroes_SwiftUI
 //
-//  Created by pook on 10/29/19.
+//  Created by pook on 11/2/19.
 //  Copyright © 2019 pookjw. All rights reserved.
 //
 
 import SwiftUI
 
-extension AnyTransition{
-    static var FadeAndMove: AnyTransition{
-        let start = AnyTransition.scale
-            .combined(with: .opacity)
-        //let end = AnyTransition.move(edge: .trailing)
-            .combined(with: .opacity)
-        return .asymmetric(insertion: start, removal: start)
-    }
-}
-
 struct DetailView: View {
-    @State var showDetail = false
+    @Environment(\.editMode) var mode
     @EnvironmentObject var userData: userData
+<<<<<<< HEAD
+    @State var hero: Hero
+=======
 
     var hero: Hero
+>>>>>>> af89b8b4ccd9647995becec6af31cfacd7aed674
     var heroIndex: Int{
-        userData.heroData.firstIndex(where: {$0.id == hero.id})!
+        self.userData.heroData.firstIndex(where: {$0.id == hero.id})!
     }
+    
     var body: some View {
+<<<<<<< HEAD
+        VStack{
+            if self.mode?.wrappedValue == .inactive{
+                List{
+                    Text("ID: \(self.userData.heroData[heroIndex].id)")
+                        .bold()
+                        .font(.title)
+                    Text("name: \(self.userData.heroData[heroIndex].name)")
+                    Text("description: \(self.userData.heroData[heroIndex].description)")
+                    Text("category: \(self.userData.heroData[heroIndex].category.rawValue)")
+                    Text("favorite: \(String(self.userData.heroData[heroIndex].favorite))")
+                    Text("health: \(self.userData.heroData[heroIndex].health)")
+=======
          ScrollView(.vertical, showsIndicators: true){
             Image(hero.backgroundImage)
                 .resizable()
@@ -81,22 +89,35 @@ struct DetailView: View {
                 VStack{
                     Text("Category: \(hero.category.rawValue)")
                     Text("Health: \(hero.health)")
+>>>>>>> af89b8b4ccd9647995becec6af31cfacd7aed674
                     HStack{
-                        Text("Difficulty:")
-                        DifficultyView(hero: hero)
-                    }.padding()
-                }.transition(.FadeAndMove)
+                        Text("difficulty:")
+                        DifficultyView(hero: self.userData.heroData[heroIndex])
+                    }
+                }
+            }else{
+                DetailEditorView(draft: $hero)
+                .onAppear(){
+                        self.hero = self.userData.heroData[self.heroIndex]
+                }
+                .onDisappear(){
+                    self.userData.heroData[self.heroIndex] = self.hero
+                }
             }
+<<<<<<< HEAD
+        }
+            .navigationBarTitle("Details")
+            .navigationBarItems(trailing: EditButton())
+            
+=======
             
         }.navigationBarTitle(Text(hero.name), displayMode: .inline)
+>>>>>>> af89b8b4ccd9647995becec6af31cfacd7aed674
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        Group{
-            DetailView(hero: heroes[0])
-            DetailView(hero: heroes[1])
-        }
+        DetailView(hero: heroes[0])
     }
 }

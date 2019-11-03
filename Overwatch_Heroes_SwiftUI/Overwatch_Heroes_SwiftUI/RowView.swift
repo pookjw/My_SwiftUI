@@ -16,10 +16,10 @@ struct RowView: View {
     }
     var body: some View {
         HStack{
-            ProfileImageView(hero: hero, size: 50, lineWidth: 3)
+            ProfileImageView(hero: self.userData.heroData[heroIndex], size: 50, lineWidth: 3)
             Spacer()
                 .frame(width: 30)
-            Text(hero.name)
+            Text(self.userData.heroData[heroIndex].name)
                 .font(.largeTitle)
                 .multilineTextAlignment(.leading)
             Spacer()

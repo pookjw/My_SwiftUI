@@ -9,15 +9,21 @@
 import SwiftUI
 
 struct DifficultyView: View {
+    @EnvironmentObject var userData: userData
     var hero: Hero
+    var heroIndex: Int {
+        self.userData.heroData.firstIndex(where: {$0.id == hero.id})!
+    }
     var body: some View {
         HStack{
-            ForEach((1...hero.difficulty), id: \.self) {_ in
+            ForEach((1...(self.userData.heroData[heroIndex].difficulty)), id: \.self) {_ in
                 Image(systemName: "star.fill")
                     .foregroundColor(Color.yellow)
             }
-            if hero.difficulty != 3{
-                ForEach((1...3-hero.difficulty), id: \.self) {_ in
+            
+            if (self.userData.heroData[heroIndex].difficulty) != 3{
+                
+                ForEach((1...(3-(self.userData.heroData[heroIndex].difficulty))), id: \.self) {_ in
                     Image(systemName: "star")
                 }
             }
